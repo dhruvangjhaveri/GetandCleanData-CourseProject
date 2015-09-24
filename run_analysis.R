@@ -20,10 +20,5 @@ rm(x,y)
 ## Naming Variables of Data
 names(data) <- c("Subject", "Activity", fread("./UCI HAR Dataset/features.txt")[,V2])
 
-## Substetting & Arranging Data
-data <- select(data, c(1:2, grep("mean()",names(data), fixed = T), grep("std()",names(data), fixed = T)))
-data <- arrange(data, Subject, Activity)
-
-## Summarising Data
-data2 <- group_by(data, Subject, Activity)
-data2 <- summarise_each(data2, funs(mean))
+## Substetting, Arranging & Summarising Data
+data <- data %>% select(c(1:2, grep("mean()",names(data), fixed = T), grep("std()",names(data), fixed = T))) %>% arrange(Subject, Activity) %>% group_by(Subject, Activity) %>% summarise_each(funs(mean))
