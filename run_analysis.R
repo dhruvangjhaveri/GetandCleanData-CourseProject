@@ -4,6 +4,9 @@ if(!("dplyr" %in% installed.packages())) install.packages("dplyr")
 library(data.table)
 library(dplyr)
 
+## Unzipping required files
+if(!(file.exists("UCI HAR Dataset"))) unzip("getdata-projectfiles-UCI HAR Dataset.zip")
+
 ## Reading Data from Files
 data <- fread("./UCI HAR Dataset/test/subject_test.txt")
 data <- rbind(data, fread("./UCI HAR Dataset/train/subject_train.txt"))
