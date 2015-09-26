@@ -71,3 +71,16 @@ The code "run_analysis.R" reads this dataset and processes it to create a tidy d
 - "Activity" - indicates which of the activity is being performed out of the following 6 activities-  WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING and LAYING.
 
 - Out of the 561 variables obtained from the raw data set, only the mean and the standard deviation values (mean() & std()) for the signals are extracted which form the remaining 66 variables of the dataset. Each of the variable indicates the mean of that parameter for 1 particular activity done by 1 particular subject.
+
+
+**License:**
+
+========
+Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
+
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
+
+Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
+
