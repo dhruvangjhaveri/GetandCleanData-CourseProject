@@ -6,13 +6,13 @@ The repository contains the following files-
 - **README.md**
 
 - **run_analysis.R**: It is an R code that coverts the raw data into a tidy data set. The code performs the following steps-
-             1. Checking for and installing required packages
-             2. Unzipping the ".zip" containing the raw data and creating a "UCI HAR Dataset" folder in the working directory.
-             3. Reading data from the different files in the "test" and "train" folder and merging the data to form one large dataset.
-             4. Naming the variables of the data set
-             5. Extracting only the mean and the standard deviation values from the raw dataset
-             6. Arranging this data set according to the subject number and the activity performed by each subject.
-             7. Summarising this data by taking the mean of each variable for each particular activity done by each particular subject. 
+ - 1. Checking for and installing required packages
+ - 2. Unzipping the ".zip" containing the raw data and creating a "UCI HAR Dataset" folder in the working directory.
+ -  3. Reading data from the different files in the "test" and "train" folder and merging the data to form one large dataset.
+ - 4. Naming the variables of the data set
+ - 5. Extracting only the mean and the standard deviation values from the raw dataset
+ - 6. Arranging this data set according to the subject number and the activity performed by each subject.
+ - 7. Summarising this data by taking the mean of each variable for each particular activity done by each particular subject. 
 
 **Note.** The code requires the ".zip" file in the working to directory to process the raw data. The ".zip" file can be downloaded from the following link- https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
