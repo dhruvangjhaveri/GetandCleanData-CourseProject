@@ -5,9 +5,7 @@ The repository contains the following files-
 
 - **README.md**
 
-- **run_analysis.R**
-
-run_analysis.R is an R code that coverts the raw data into a tidy data set.
+- **run_analysis.R**   return run_analysis.R is an R code that coverts the raw data into a tidy data set.
 
 **Note.** The code functions using the latest versions of the "data.table" and the "dplyr" package. It is strongly recommended to update your package to the latest version ([Version 1.9.6] (https://cran.r-project.org/web/packages/data.table/index.html) for "data.table and [Version 0.4.3] (https://cran.r-project.org/web/packages/dplyr/index.html) for "dplyr" package) for the proper functioning of the code. 
 
