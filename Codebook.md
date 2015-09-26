@@ -17,10 +17,57 @@ sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor ac
 The raw data set can be obtained from the following data source-
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-Furthermore, this raw dataset is processed into tidy data using the "run_analysis.R" code. This tidy dataset has 180 observations and 68 variables. The variables are described in the following table- 
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
-|Variable | Description | 
-| :---: | :---: |
-| Subject | The 30 volunteers in this experiment are each represented by a unique number from 1 to 30 |
-| Activity | Represents which of the 6 activities the volunteer is performing |
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
 
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+Thus the following signals were processed using the data obtained from the accelerometer and gyroscope:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+- tBodyAcc-XYZ
+- tGravityAcc-XYZ
+- tBodyAccJerk-XYZ
+- tBodyGyro-XYZ
+- tBodyGyroJerk-XYZ
+- tBodyAccMag
+- tGravityAccMag
+- tBodyAccJerkMag
+- tBodyGyroMag
+- tBodyGyroJerkMag
+- fBodyAcc-XYZ
+- fBodyAccJerk-XYZ
+- fBodyGyro-XYZ
+- fBodyAccMag
+- fBodyAccJerkMag
+- fBodyGyroMag
+- fBodyGyroJerkMag
+
+From these signals, the following set of variables were estimated-
+
+- mean(): Mean value
+- std(): Standard deviation
+- mad(): Median absolute deviation 
+- max(): Largest value in array
+- min(): Smallest value in array
+- sma(): Signal magnitude area
+- energy(): Energy measure. Sum of the squares divided by the number of values. 
+- iqr(): Interquartile range 
+- entropy(): Signal entropy
+- arCoeff(): Autorregresion coefficients with Burg order equal to 4
+- correlation(): correlation coefficient between two signals
+- maxInds(): index of the frequency component with largest magnitude
+- meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+- skewness(): skewness of the frequency domain signal 
+- kurtosis(): kurtosis of the frequency domain signal 
+- bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
+- angle(): Angle between to vectors.
+
+The code "run_analysis.R" reads this dataset and processes it to create a tidy dataset which is a table having 68 variables and 180 observations. Below is the description of the variables in this pocessed dataset-
+
+- "Subject" - indicates each of the 30 volunteers that are represented by a number between 1 to 30.
+
+- "Activity" - indicates which of the activity is being performed out of the following 6 activities-  WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING and LAYING.
+
+- Out of the 561 variables obtained from the raw data set, only the mean and the standard deviation values (mean() & std()) for the signals are extracted which form the remaining 66 variables of the dataset. Each of the variable indicates the mean of that parameter for 1 particular activity done by 1 particular subject.
