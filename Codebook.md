@@ -73,6 +73,14 @@ The code "run_analysis.R" reads this dataset and processes it to create a tidy d
 - Out of the 561 variables obtained from the raw data set, only the mean and the standard deviation values (mean() & std()) for the signals are extracted which form the remaining 66 variables of the dataset. Each of the variable indicates the mean of that parameter for 1 particular activity done by 1 particular subject.
 
 
+**Notes:**
+--------------
+- The values of the variables are normalized and bounded within [-1,1].
+- Each row indicates the mean of the variable for one particular activity for one particular subject.
+
+For more information about this dataset contact: activityrecognition@smartlab.ws
+
+
 
 **License:**
 --------------
