@@ -24,6 +24,8 @@ The packages can be directly updated from the R console using the following code
 - **Code Book.md**: It gives a detailed description of the raw data set as well as the tidy data set obtained by processing the data using the "run_analysis.R" code. 
 
 
+
 **References**:
+----------------
 - https://www.coursera.org/course/getdata
 - http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
