@@ -27,6 +27,6 @@ names(data) <- c("Subject", "Activity", fread("./UCI HAR Dataset/features.txt")[
 data <- data %>% select(c(1:2, grep("mean()",names(data), fixed = T), grep("std()",names(data), fixed = T))) %>% arrange(Subject, Activity) %>% group_by(Subject, Activity) %>% summarise_each(funs(mean))
 
 ## Renaming column variables to be valid column names
-names(data) <- gsub("-", "_", names(data), fixed = TRUE)
+names(data) <- gsub("-", "_", names(data))
 names(data) <- gsub("mean()", "mean", names(data), fixed = TRUE)
 names(data) <- gsub("std()", "std", names(data), fixed = TRUE)
