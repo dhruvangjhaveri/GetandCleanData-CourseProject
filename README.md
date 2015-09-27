@@ -13,6 +13,7 @@ The repository contains the following files-
  - 5. Extracting only the mean and the standard deviation values from the raw dataset
  - 6. Arranging this data set according to the subject number and the activity performed by each subject.
  - 7. Summarising this data by taking the mean of each variable for each particular activity done by each particular subject. 
+ - 8. Reanaming variables to syntactically valid column names.
 
 **Note.** The code requires the ".zip" file in the working to directory to process the raw data. The ".zip" file can be downloaded from the following link- https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
