@@ -64,6 +64,8 @@ From these signals, the following set of variables were estimated-
 - bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
 - angle(): Angle between to vectors.
 
+**Note.** For more information about this raw dataset contact: activityrecognition@smartlab.ws
+
 The code "run_analysis.R" reads this dataset and processes it to create a tidy dataset which is a table having 68 variables and 180 observations. Below is the description of the variables in this pocessed dataset-
 
 - "Subject" - indicates each of the 30 volunteers that are represented by a number between 1 to 30.
@@ -77,8 +79,6 @@ The code "run_analysis.R" reads this dataset and processes it to create a tidy d
 --------------
 - The values of the variables are normalized and bounded within [-1,1].
 - Each row indicates the mean of the variable for one particular activity for one particular subject.
-
-For more information about this dataset contact: activityrecognition@smartlab.ws
 
 
 
