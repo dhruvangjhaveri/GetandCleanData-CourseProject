@@ -74,6 +74,8 @@ The code "run_analysis.R" reads this dataset and processes it to create a tidy d
 
 - Out of the 561 variables obtained from the raw data set, only the mean and the standard deviation values (mean() & std()) for the signals are extracted which form the remaining 66 variables of the dataset. Each of the variable indicates the mean of that parameter for 1 particular activity done by 1 particular subject.
 
+The variables are renamed in the tidy data set to form syntactically valid column names. This is done by eliminating the special charaters "()"
+
 
 **Notes:**
 --------------
