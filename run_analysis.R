@@ -1,10 +1,10 @@
-## Installing Required Packages
+## Installing & Loading The Required Packages
 if(!("data.table" %in% installed.packages())) install.packages("data.table")
 if(!("dplyr" %in% installed.packages())) install.packages("dplyr")
 library(data.table)
 library(dplyr)
 
-## Unzipping required files
+## Unzipping Required Files
 if(!(file.exists("UCI HAR Dataset"))) unzip("getdata-projectfiles-UCI HAR Dataset.zip")
 
 ## Reading Data from Files
