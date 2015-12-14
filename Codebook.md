@@ -68,9 +68,9 @@ From these signals, the following set of variables were estimated-
 
 The code "run_analysis.R" reads this dataset and processes it to create a tidy dataset which is a table having 68 variables and 180 observations. Below is the description of the variables in this pocessed dataset-
 
-- "Subject" - indicates each of the 30 volunteers that are represented by a number between 1 to 30.
+- "Subject" - Indicates each of the 30 volunteers that are represented by a number between 1 to 30.
 
-- "Activity" - indicates which of the activity is being performed out of the following 6 activities-  WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING and LAYING.
+- "Activity" - Indicates which of the activity is being performed out of the following 6 activities-  WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING and LAYING.
 
 - Out of the 561 variables obtained from the raw data set, only the mean and the standard deviation values (mean() & std()) for the signals are extracted which form the remaining 66 variables of the dataset. Each of the variable indicates the mean of that parameter for 1 particular activity done by 1 particular subject.
 
