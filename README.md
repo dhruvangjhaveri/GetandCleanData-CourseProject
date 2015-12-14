@@ -1,4 +1,4 @@
-## Note: You may find this repository created about 3 months ago. This is due to the fact that I am retaking this course and submitting the same repository which I had created when doing the course first time. I assure you that it is my own work.
+## Note: You may find this repository created about 3 months ago. This is due to the fact that I am retaking this course and submitting the same repository(With a few minor improvements in the codebook and the R Code) which I had created when doing the course first time. I assure you that it is my own work.
 
 # GetandCleanData-CourseProject
 **This repository contains the submission for the Course Project of the course ["Getting and Cleaning Data"] (https://www.coursera.org/course/getdata) which is a part of a [Data Science] (https://www.coursera.org/specializations/jhudatascience) specialization offered by Johns Hopkins University on [Coursera] (https://www.coursera.org/browse).**
